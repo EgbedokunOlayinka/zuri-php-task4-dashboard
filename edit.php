@@ -17,7 +17,7 @@
         if (mysqli_query($conn, $query)) {
             $courseName = '';
 
-            header('Location: dashboard.php');
+            header('Location: index.php');
         } else {
             $msg = 'Action could not be completed';
             $msgClass = 'alert-danger';
@@ -34,7 +34,7 @@
             $course = mysqli_fetch_assoc($result);
             $courseName = $course['name'];
         } else {
-            header('Location: dashboard.php');
+            header('Location: index.php');
         }
     }
 

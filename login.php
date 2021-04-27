@@ -2,7 +2,7 @@
     include('inc/header.php');
 
     if (isset($_SESSION['email'])) {
-        header('Location: dashboard.php');
+        header('Location: index.php');
     };
 
     $msg = '';
@@ -26,7 +26,7 @@
                     $email = '';
                     $password = '';
 
-                    header('Location: dashboard.php');
+                    header('Location: index.php');
                 } else {
                     $msg = 'Incorrect user details. Check and try again';
                     $msgClass = 'alert-danger';
